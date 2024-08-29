@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 export default function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Full-Stack", "DevOps", "Cloud Engineer Enthusiast"];
+  const toRotate = ["Full-Stack,", "DevOps,", "Cloud Engineer Enthusiast"];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;

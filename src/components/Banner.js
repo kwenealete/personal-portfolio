@@ -6,10 +6,10 @@ import { useEffect, useState } from "react";
 export default function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Full-Stack,", "DevOps,", "Cloud Engineer Enthusiast"];
+  const toRotate = ["Hi I'm a Full-Stack,", "DevOps,", "and Cloud Engineer Enthusiast"];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const period = 2000;
+  const period = 1000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -51,7 +51,7 @@ export default function Banner() {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              {`Hi I'm a `}
+              {` `}
               <span className="wrap">{text}</span>
             </h1>
             <p>kshkjhfhewklhoihoiwho hfhhhhjgj jfjjfjf</p>

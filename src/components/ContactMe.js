@@ -28,14 +28,14 @@ export default function ContactMe() {
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
-        "Content-Type": "Application/json;charset=utf-8",
+        "Content-Type": "application/json;charset=utf-8",
       },
-      body: JSON.stringify(userDetails),
+      body: JSON.stringify(formDetails),
     });
     setButtonText("send");
-    let result = response.json();
+    let result = await response.json();
     setFormDetails(userDetails);
-    if (result.code === 200) {
+    if (result.code == 200) {
       setStatus({ succes: true, message: "Message sent successfully" });
     } else {
       setStatus({
@@ -59,7 +59,7 @@ export default function ContactMe() {
                 <Col sm={6} className="px-1">
                   <input
                     type="text"
-                    value={userDetails.firstName}
+                    value={formDetails.firstName}
                     placeholder="First Name"
                     onChange={(e) => onFormUpdate("firstName", e.target.value)}
                   />
@@ -67,7 +67,7 @@ export default function ContactMe() {
                 <Col sm={6} className="px-1">
                   <input
                     type="text"
-                    value={userDetails.lastName}
+                    value={formDetails.lastName}
                     placeholder="Last Name"
                     onChange={(e) => onFormUpdate("lastName", e.target.value)}
                   />
@@ -75,7 +75,7 @@ export default function ContactMe() {
                 <Col sm={6} className="px-1">
                   <input
                     type="email"
-                    value={userDetails.email}
+                    value={formDetails.email}
                     placeholder="Email Address"
                     onChange={(e) => onFormUpdate("email", e.target.value)}
                   />
@@ -83,7 +83,7 @@ export default function ContactMe() {
                 <Col sm={6} className="px-1">
                   <input
                     type="tel"
-                    value={userDetails.phone}
+                    value={formDetails.phone}
                     placeholder="Phone Number"
                     onChange={(e) => onFormUpdate("phone", e.target.value)}
                   />
@@ -91,7 +91,7 @@ export default function ContactMe() {
                 <Col sm={6} className="px-1">
                   <textarea
                     rows="6"
-                    value={userDetails.message}
+                    value={formDetails.message}
                     placeholder="Message"
                     onChange={(e) => onFormUpdate("message", e.target.value)}
                   />

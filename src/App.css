@@ -264,6 +264,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
+  text-align: justify;
 }
 .banner button {
   color: #fff;
@@ -279,6 +280,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
+}
+.banner a {
+  text-decoration: none;
 }
 .banner button:hover svg {
   margin-left: 25px;
@@ -434,6 +438,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx:hover::before {
   height: 100%;
+}
+a:hover {
+  color: #fff;
 }
 .proj-txtx {
   position: absolute;

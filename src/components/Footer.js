@@ -14,17 +14,17 @@ export default function Footer() {
           </Col>
           <Col sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/monya-kwene/" target="blank">
                 <img src={navIcon1} alt="Icon" />
               </a>
-              <a href="#">
+              <a href="https://github.com/kwenealete" target="blank">
                 <img src={navIcon2} alt="Icon" />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/seanalete/" target="blank">
                 <img src={navIcon3} alt="Icon" />
               </a>
             </div>
-            <p>CopyRight 2024. All Right Reserved</p>
+            <p>&copy; 2024. All Right Reserved</p>
           </Col>
         </Row>
       </Container>

@@ -54,10 +54,15 @@ export default function ContactMe() {
           </Col>
           <Col md={6}>
             <h2>Get In Touch</h2>
+            <p>
+              A project in mind, or perhaps just want to reach out, then feel
+              free to shoot me a message.
+            </p>
             <form onSubmit={handleSubmit}>
               <Row>
                 <Col sm={6} className="px-1">
                   <input
+                    required
                     type="text"
                     value={formDetails.firstName}
                     placeholder="First Name"
@@ -66,6 +71,7 @@ export default function ContactMe() {
                 </Col>
                 <Col sm={6} className="px-1">
                   <input
+                    required
                     type="text"
                     value={formDetails.lastName}
                     placeholder="Last Name"
@@ -74,6 +80,7 @@ export default function ContactMe() {
                 </Col>
                 <Col sm={6} className="px-1">
                   <input
+                    required
                     type="email"
                     value={formDetails.email}
                     placeholder="Email Address"
@@ -90,6 +97,7 @@ export default function ContactMe() {
                 </Col>
                 <Col sm={6} className="px-1">
                   <textarea
+                    required
                     rows="6"
                     value={formDetails.message}
                     placeholder="Message"

@@ -32,13 +32,7 @@ export default function Skills() {
             <div className="skill-bx">
               <h2>Skiils</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                SOME OF THE TECHNOLOGIES I'VE WORKED WITH .
               </p>
               <Carousel
                 responsive={responsive}
@@ -48,6 +42,7 @@ export default function Skills() {
                 {skillsList.map((skill) => (
                   <div className="item">
                     <img src={skill.imageUrl} alt="Image" />
+
                     <h5>{skill.name}</h5>
                   </div>
                 ))}

@@ -17,7 +17,11 @@ import express from "../assets/img/express.svg";
 import graphql from "../assets/img/graphql.svg";
 import grafana from "../assets/img/grafana.svg";
 import prometheus from "../assets/img/prometheus.svg";
-import ks from '../assets/img/ks.svg'
+import ks from "../assets/img/ks.svg";
+import nginx from "../assets/img/nginx.svg";
+import mongo from "../assets/img/mongo.svg";
+import helm from "../assets/img/helm.svg";
+import argocd from "../assets/img/argocd.svg";
 
 export const skillsList = [
   {
@@ -40,14 +44,17 @@ export const skillsList = [
     name: "Github",
     imageUrl: github,
   },
+
   {
     name: "HTML",
     imageUrl: html,
   },
+
   {
     name: "JEST",
     imageUrl: jest,
   },
+
   {
     name: "REDUX",
     imageUrl: redux,
@@ -73,11 +80,6 @@ export const skillsList = [
     name: "ExpressJs",
     imageUrl: express,
   },
-
-  {
-    name: "KeystoneJS",
-    imageUrl: ks,
-  },
   {
     name: "Docker",
     imageUrl: docker,
@@ -102,5 +104,22 @@ export const skillsList = [
   {
     name: "Terraform",
     imageUrl: terraform,
+  },
+
+  {
+    name: "NGINX",
+    imageUrl: nginx,
+  },
+  {
+    name: "HELM",
+    imageUrl: helm,
+  },
+  {
+    name: "ARGOCD",
+    imageUrl: argocd,
+  },
+  {
+    name: "MONGODB",
+    imageUrl: mongo,
   },
 ];

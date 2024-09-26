@@ -30,7 +30,7 @@ export default function Skills() {
         <Row>
           <Col>
             <div className="skill-bx">
-              <h2>Skiils</h2>
+              <h2>Skills</h2>
               <p>
                 SOME OF THE TECHNOLOGIES I'VE WORKED WITH .
               </p>

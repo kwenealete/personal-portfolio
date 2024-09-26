@@ -10,8 +10,8 @@ export default function Banner() {
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
     "Hi I'm a Full-Stack,",
-    "DevOps and",
-    "Cloud Engineer Enthusiast",
+    "DevOps and Cloud",
+    "Engineer Enthusiast.",
   ];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
@@ -85,6 +85,13 @@ export default function Banner() {
                     maintainable, and saclable software. In order to level up
                     myself, I have developed applications from inception to
                     deployment to deliver high quality products and works.
+                  </p>
+                  <p>
+                    Also, with the growing influence of cloud technologies and
+                    my desire to keep pushing myself and upskilling
+                    knowledge-wise ,as a self-taught; I hold an AWS Solutions
+                    Architect Associate certificate and Professional Scrum
+                    Master certificate.
                   </p>
                   <p>
                     I am seeking an opportunity to join an exciting industry

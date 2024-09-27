@@ -7,7 +7,7 @@ import projImg6 from "../assets/img/sickfits.png";
 import projImg7 from "../assets/img/expenseTracker.png";
 import projImg8 from "../assets/img/blogApp.png";
 
-export const projects = [
+export const projects1 = [
   {
     title: "Personal Portfolio",
     description: "First iteration of my personal website.",
@@ -53,6 +53,10 @@ export const projects = [
     imgUrl: projImg6,
     tools: ' ReactJS, KeystoneJS, NodeJS, GrpahQL, Apollo/Client, Jest, Styled components'
   },
+  
+];
+
+export const projects2 = [
   {
     title: "Expense Tracker",
     description:
@@ -68,4 +72,4 @@ export const projects = [
     imgUrl: projImg8,
     tools: 'ReactJS, NodeJS, Axios, MongoDB, Express, Nodemon'
   },
-];
+]

@@ -32,8 +32,9 @@ export default function ContactMe() {
       },
       body: JSON.stringify(formDetails),
     });
-    setButtonText("send");
+
     let result = await response.json();
+    setButtonText("send");
     setFormDetails(userDetails);
     if (result.code == 200) {
       setStatus({ succes: true, message: "Message sent successfully" });

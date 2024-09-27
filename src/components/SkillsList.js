@@ -17,7 +17,6 @@ import express from "../assets/img/express.svg";
 import graphql from "../assets/img/graphql.svg";
 import grafana from "../assets/img/grafana.svg";
 import prometheus from "../assets/img/prometheus.svg";
-import ks from "../assets/img/ks.svg";
 import nginx from "../assets/img/nginx.svg";
 import mongo from "../assets/img/mongo.svg";
 import helm from "../assets/img/helm.svg";

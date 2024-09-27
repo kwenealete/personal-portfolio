@@ -3,7 +3,7 @@ import { Col } from "react-bootstrap";
 export default function ProjectCard({ title, description, imgUrl, srcCode, tools }) {
   return (
     <Col sm={6} md={4}>
-      <a href={srcCode} target='_blank'>
+      <a href={srcCode} target='_blank' rel="noreferrer">
         <div className="proj-imgbx">
           <img src={imgUrl} />
           <div className="proj-txtx">

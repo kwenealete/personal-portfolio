@@ -70,8 +70,8 @@ export default function Banner() {
                   <p>
                     My name is <a href="https://github.com/kwenealete">Monya</a>
                     , and I am a dedicated Software Engineer with a
-                    comprehensive skill set that spans frontend developement,
-                    backend developement, and cloud technologies. I hold an MSc
+                    comprehensive skill set that spans frontend development,
+                    backend development, and cloud technologies. I hold an MSc
                     in Information Technology from{" "}
                     <a href="https://www.cardiffmet.ac.uk/Pages/default.aspx">
                       Cardiff Metropolitan University (CMU)

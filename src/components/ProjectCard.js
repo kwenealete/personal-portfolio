@@ -1,5 +1,7 @@
 import { Col } from "react-bootstrap";
 
+// Project card displaying individual project information
+
 export default function ProjectCard({ title, description, imgUrl, srcCode, tools }) {
   return (
     <Col sm={6} md={4}>

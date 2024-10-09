@@ -27,6 +27,7 @@ export default function Banner() {
     };
   }, [text]);
 
+  // Function to execute looping and deleting of various texts 
   function tick() {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];

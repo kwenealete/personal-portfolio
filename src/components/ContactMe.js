@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 import { Col, Container, Row } from "react-bootstrap";
 import contactImage from "../assets/img/contact-img.svg";
 
@@ -24,21 +25,38 @@ export default function ContactMe() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    setButtonText("sending...");
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
+    setButtonText("Sending...");
 
-    let result = await response.json();
-    setButtonText("send");
-    setFormDetails(userDetails);
-    if (result.code == 200) {
+    // EmailJS credentials
+
+    const servideId = process.env.REACT_APP_SERVICE_ID;
+    const templateId = process.env.REACT_APP_TEMPLATE_ID;
+    const publicKey = process.env.REACT_APP_PUBLIC_KEY;
+
+    // Creating an object with my EmailJS credentials
+
+    const data = {
+      service_id: servideId,
+      template_id: templateId,
+      user_id: publicKey,
+      template_params: {
+        from_name: formDetails.firstName + " " + formDetails.lastName,
+        from_email: formDetails.email,
+        message: formDetails.message,
+      },
+    };
+
+    // Sending the email using EmailJS REST API endpoint
+    try {
+      const response = await axios.post(
+        " https://api.emailjs.com/api/v1.0/email/send",
+        data
+      );
+
+      setButtonText("send");
+      setFormDetails(userDetails);
       setStatus({ succes: true, message: "Message sent successfully" });
-    } else {
+    } catch {
       setStatus({
         succes: false,
         message: "Something went wrong, please try again later.",
